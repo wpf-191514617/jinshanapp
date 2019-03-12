@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_member_bac_img">
+
+
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:background="@drawable/bg_aboutus"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_70dp"
+            android:layout_marginRight="@dimen/dimen_70dp"
+            android:text="立即开通"
+            android:textColor="#674810"
+            android:textSize="@dimen/sp_15"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_30dp"
+    android:paddingRight="@dimen/dimen_30dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="@drawable/bg_white_radiu5"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_17dp"
+        android:layout_marginRight="@dimen/dimen_17dp"
+        android:paddingTop="@dimen/dimen_20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日客户信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_11"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:text="(请填写真实资料，否则可能导致审核不通过)"/>
+
+
+        <ImageView
+            android:id="@+id/ivCode"
+            android:layout_width="@dimen/dimen_200dp"
+            android:layout_height="@dimen/dimen_200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/dimen_12dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimen_25dp">
+
+
+            <Button
+                android:id="@+id/btnPre"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:background="@drawable/bg_radiu5"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/white"
+                android:text="上一个"/>
+
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_25dp"
+                android:background="@drawable/bg_radiu5"
+                android:textSize="@dimen/sp_10"
+                android:text="下一个"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/dimen_32dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:src="@drawable/loan_btn_close"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="273dp">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150dp"
+        app:AutoPlayTime="3000"
+        app:isAutoPlay="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowTips="true"
+        app:pageChangeDuration="800"
+        app:pointsContainerBackground="#442e2e2e"
+        app:pointsPosition="RIGHT"
+        app:pointsVisibility="true"
+        app:tipTextSize="12sp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_13dp"
+    android:layout_marginLeft="@dimen/dimen_12dp"
+    android:textSize="@dimen/sp_18"
+    android:textColor="#4D4D4D"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:text="精选热帖"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvHot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

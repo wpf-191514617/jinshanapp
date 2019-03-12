@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:AutoPlayTime="2000"
+        app:isAutoPlay="false"
+        app:isClipChildrenMode="true"
+        app:isHandLoop="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="false"
+        app:isShowTips="true"
+        app:pageChangeDuration="800"
+        app:pointsContainerBackground="@drawable/shape_round_8dp"
+        app:pointsPosition="RIGHT" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:paddingBottom="@dimen/dimen_21dp">
+
+        <LinearLayout
+            android:id="@+id/layoutLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:src="@drawable/home_btn_loan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快速借贷"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/gray_33"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:src="@drawable/home_btn_bank"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快速办卡"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/gray_33"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:src="@drawable/home_btn_member"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员中心"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/gray_33"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:src="@drawable/home_btn_summary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系列汇总"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/gray_33"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5dp"
+        android:background="@color/gray_cc"/>
+
+
+</LinearLayout>

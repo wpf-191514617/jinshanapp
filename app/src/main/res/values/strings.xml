@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JinShan</string>
+    <string name="no_data">暂无数据</string>
+    <string name="tab_home">首页</string>
+    <string name="study">学习</string>
+    <string name="loan">贷超</string>
+    <string name="mine">我的</string>
+    <string name="detail">1.年龄在18周岁以上大陆公民 \n2.手机号实名认证 \n3.芝麻信用分在550分以上</string>
+    <string name="about">陕西金山金融外包服务有限公司，以“理性投资，保值增值”为理念、以“倾力帮助中小企业及个人解决资金周转困难”为己任、以“诚信服务，信誉第一”为宗旨，为各类公司和个人提供优质、安全、快捷、便利的金融咨询服务、投资管理等业务。公司自成立以来业务发展迅速，资产规模不断增加，有效地保障了公司在良性循环轨道上的健康发展和迅速拓展。是中国领先从事个人信用贷款和咨询与管理的专业性咨询服务机构，在中国率先推出“个人对商人”（称“C2B”）的信用贷款服务平台。公司总部位于西安，并将在郑州、广州、沈阳、大连、济南、青岛、烟台、武汉、襄樊、杭州、南京、苏州、天津、成都等众多一、二线城市逐步建立全国性的服务网络。</string>
+</resources>

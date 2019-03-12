@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:paddingLeft="@dimen/dimen_18dp"
+        android:paddingRight="@dimen/dimen_18dp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_21dp"
+            android:layout_height="@dimen/dimen_18dp"
+            android:src="@drawable/loan_left_sid"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:text=""
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="@dimen/dimen_22dp"
+            android:layout_height="@dimen/dimen_21dp"
+            android:src="@drawable/loan_right_cus"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42dp"
+        android:background="@color/layout_bg"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:background="@drawable/bg_search"
+            android:layout_marginLeft="@dimen/dimen_11dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_12dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:src="@drawable/home_top_lcon_sea"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入关键字搜索"
+                android:textColor="#ff808080"
+                android:textSize="13sp"
+                android:layout_marginLeft="@dimen/dimen_5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="@dimen/dimen_23dp"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@color/white"
+        app:tabTextColor="@color/gray_80"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabMode="scrollable"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

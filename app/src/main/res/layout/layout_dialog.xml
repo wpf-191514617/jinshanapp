@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_30dp"
+    android:paddingRight="@dimen/dimen_30dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_240dp"
+        android:background="@drawable/bg_white_radiu5"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_17dp"
+        android:layout_marginRight="@dimen/dimen_17dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:paddingRight="@dimen/dimen_30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日客户信息"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            android:textColor="#00AEFF"
+            android:layout_marginTop="8dp"
+            android:text="(请填写真实资料，否则可能导致审核不通过)"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_25dp"
+            android:paddingLeft="@dimen/dimen_20dp"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/gray_33"
+            android:background="@null"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:textColorHint="@color/gray_cc"
+            android:hint="姓名"/>
+
+        <include layout="@layout/line"/>
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_25dp"
+            android:paddingLeft="@dimen/dimen_20dp"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/gray_33"
+            android:background="@null"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textColorHint="@color/gray_cc"
+            android:hint="手机号"/>
+
+        <include layout="@layout/line"/>
+
+
+
+        <EditText
+            android:id="@+id/etID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_25dp"
+            android:paddingLeft="@dimen/dimen_20dp"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/gray_33"
+            android:background="@null"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textColorHint="@color/gray_cc"
+            android:hint="身份证号"/>
+
+        <include layout="@layout/line"/>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38dp"
+            android:layout_marginLeft="@dimen/dimen_24dp"
+            android:layout_marginRight="@dimen/dimen_24dp"
+            android:background="@drawable/bg_login"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="确认"
+            android:textColor="#fffdfdfd"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/dimen_32dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:src="@drawable/loan_btn_close"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

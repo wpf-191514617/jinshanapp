@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingBottom="@dimen/dimen_5dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_radiu5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingLeft="@dimen/dimen_9dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:src="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="口子名称"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:id="@+id/tvDraution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_11"
+                android:text="口子简介"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="有回访"
+                    android:textSize="@dimen/sp_10"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:textSize="@dimen/sp_10"
+                    android:text="09/18"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvHotTag"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/white"
+        android:text="今日热门"
+        android:background="@drawable/bg_product_tag"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

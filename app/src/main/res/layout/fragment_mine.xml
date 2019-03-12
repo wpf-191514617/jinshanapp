@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/login_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:text="我的"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_12dp"
+        android:paddingRight="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_40dp">
+
+        <com.jinshan.application.view.LineView
+            android:id="@+id/lvUpdatePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lable="修改密码"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dimen_8dp"/>
+
+        <!--<include layout="@layout/line"/>-->
+
+        <com.jinshan.application.view.LineView
+            android:id="@+id/lvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lable="会员中心"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"/>
+
+        <include layout="@layout/line"/>
+
+
+        <com.jinshan.application.view.LineView
+            android:id="@+id/lvFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lable="意见反馈"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"/>
+
+        <include layout="@layout/line"/>
+
+
+        <com.jinshan.application.view.LineView
+            android:id="@+id/lvBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lable="返利"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"/>
+
+        <!--<include layout="@layout/line"/>-->
+
+
+        <com.jinshan.application.view.LineView
+            android:id="@+id/lvAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lable="关于我们"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"/>
+
+        <include layout="@layout/line"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_marginLeft="@dimen/dimen_68dp"
+        android:layout_marginRight="@dimen/dimen_68dp"
+        android:layout_marginTop="@dimen/dimen_45dp"
+        android:background="@drawable/bg_login"
+        android:text="退出登录"
+        android:textColor="#fffdfdfd"/>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

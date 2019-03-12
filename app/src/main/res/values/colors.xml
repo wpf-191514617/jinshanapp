@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5E9DED</color>
+    <color name="colorPrimaryDark">#5E9DED</color>
+    <color name="colorAccent">#5E9DED</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="sr_window_background">#FFFEFEFE</color>
+    <color name="black">#000000</color>
+    <color name="gray_80">#808080</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_33">#333333</color>
+    <color name="layout_bg">#F5F5F5</color>
+    <color name="gray_66">#666666</color>
+
+    <color name="blue">#ff59a6ee</color>
+
+</resources>
